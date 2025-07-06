@@ -12,7 +12,7 @@ const app = express()
 const port = 3000
 connectDB()
 
-const frontendServer = ['http://localhost:5173']
+const frontendServer = ['https://splindora-th5p.vercel.app','http://localhost:5173']
 
 app.get('/', (req, res) => {
     res.send('hello we are connected with backend')
@@ -29,4 +29,4 @@ app.use('/api/trip', tripRouter)
 app.use('/api/expense', expenseRouter)
 
 
-app.listen(port, () => console.log(`server started on port : http://localhost:${port}`))
+app.listen(port, () => console.log(`server started on port : ${port}`))
