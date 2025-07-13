@@ -12,7 +12,9 @@ const app = express()
 const port = 3000
 connectDB()
 
-const frontendServer = ['https://splindora-th5p.vercel.app','http://localhost:5173']
+const frontendServer = [
+    'https://splindora-th5p.vercel.app',
+    'http://localhost:5173']
 
 app.get('/', (req, res) => {
     res.send('hello we are connected with backend')
